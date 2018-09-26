@@ -4,10 +4,11 @@
 
 ### How do we run the code:
 
-* go run main.go
+`go run main.go`
 
     run the main directly
-* go build main.go
+
+`go build main.go`
 
     make the file into main and run ./main
 
@@ -30,12 +31,13 @@ short for function
 ### How is the main.go file organized
 * Package declaration : 
 
-        package main
+        `package main`
 * Import other packages that we need: 
 
-        import "fmt"
+        `import "fmt"`
 * Declare functions, tell Go to do things:
-
+```
         func main(){
             fmt.Println("hi there")
         }
+ ```
