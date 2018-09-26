@@ -5,12 +5,10 @@
 ### How do we run the code:
 
 `go run main.go`
-
-    run the main directly
+ run the main directly
 
 `go build main.go`
-
-    make the file into main and run ./main
+make the file into main and run ./main
 
 ### What does 'package main' mean?
 
