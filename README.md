@@ -1,4 +1,4 @@
-# goLang-Practice
+# Golang Practice
 
 # Chapter One -- Hello World
 
