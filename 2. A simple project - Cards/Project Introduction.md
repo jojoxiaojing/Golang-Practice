@@ -20,3 +20,16 @@
 	return "Five of Diamonds"
 }
 
+## Basic type
+* bool    true false
+* string  "Five of Diamonds"
+* int     1
+* float64 10.0009
+
+## Array and Slice
+* Array is fixed size
+    
+* Slice is not fixed
+    cards := []string{"Ace of Diamonds", newCard()}
+    cards = append(cards, "Six of Spades")
+
