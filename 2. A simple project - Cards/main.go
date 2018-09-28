@@ -1,16 +1,12 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
-	cards := newDeck()
 
-	cards.print()
+	cards := newDeckFromFile("myCards")
+	fmt.Println(cards)
 
-	hand, remamingDeck := deal(cards, 5)
-
-	hand.print()
-	remamingDeck.print()
-}
-
-func newCard() string {
-	return "Five of Diamonds"
 }

@@ -78,3 +78,10 @@ Any variable with a deck type can get access to print method now
 ## Range of Slice
 
  [starIndexIncluding, endIndexNotIncluding]
+
+## byte slice = string
+ASCII table ascii.com
+
+"Hi there!" = [72 105 32 116 104 101 114 101 33]
+
+    []byte("Hi there!")
