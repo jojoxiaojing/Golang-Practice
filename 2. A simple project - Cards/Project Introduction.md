@@ -17,8 +17,8 @@
 
 ## How to declaire a function
     func newCard() string {
-	return "Five of Diamonds"
-}
+	    return "Five of Diamonds"
+    }
 
 ## Basic type
 * bool    true false
@@ -28,6 +28,7 @@
 
 ## Array and Slice
 * Array is fixed size
+
     var a [2]string
 	a[0] = "Hello"
 	a[1] = "World"
@@ -38,10 +39,42 @@
     fmt.Println(primes)
     
 * Slice is not fixed
+
     cards := []string{"Ace of Diamonds", newCard()}
     cards = append(cards, "Six of Spades")
 
 ## For loop
+
     for i, card := range cards {
 		fmt.Println(i, card)
 	}
+
+
+	for _, suit := range cardSuits {
+		for _, value := range cardValues {
+			cards = append(cards, value+"of"+suit)
+		}
+	}
+
+## Declare a new class
+Any variable with a deck type can get access to print method now
+
+    type deck []string
+
+    func newDeck() deck {
+
+	cards := deck{}
+	return cards
+}
+
+    //d:    actual copy of the deck
+    //deck: Every variable of type 'deck' can get access to print method now
+    func (d deck) print() {
+        for i, card := range d {
+            fmt.Println(i, card)
+        }
+    }
+
+## Range of Slice
+
+ [starIndexIncluding, endIndexNotIncluding]
