@@ -32,11 +32,11 @@ func inorderTraversal(tn *TreeNode) []int {
 		result = append(result, inorderTraversal(tn.Left)...)
 	}
 
-	result = append(result, tn.Val)
-
 	if tn.Right != nil {
 		result = append(result, inorderTraversal(tn.Right)...)
 	}
+
+	result = append(result, tn.Val)
 
 	return result
 }
