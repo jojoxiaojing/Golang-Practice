@@ -182,3 +182,24 @@ func insertIntoBST(root *TreeNode, val int) *TreeNode {
 	return root
 
 }
+
+func missingNumber(nums []int) int {
+
+	missing := len(nums)
+	n := len(nums)
+
+	if nums[0] < nums[n] {
+		for i := 0; i < n; i++ {
+			missing ^= nums[i] ^ i
+		}
+
+	} else {
+		for i := 0; i < n; i++ {
+			missing ^= nums[i] ^ (n - i)
+		}
+	}
+
+	return missing
+
+}
+
